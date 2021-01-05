@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Planet Leap",
+    "summary": "A fast-paced endless mobile game with over 100.000 downloads. Developed with Unity and C#.",
+    "href": "https://planetleapgame.com/"
+  },
+  {
+    "title": "GGifs.tv",
+    "summary": "Desktop application used to crop, upload and share short videos. Built in JavaScript, Go, Electron and FFmpeg.",
+    "href": "https://ggifs.tv/"
+  },
+  {
+    "title": "CNN Letter Recognition",
+    "summary": "Convolutional Neural Network taught to solve Letter Recognition with ~90% accuracy. Created in Python, JavaScript, TensorFlow and Keras.",
+    "href": "https://planetleapgame.com/"
+  },
+  {
+    "title": "Rising Water",
+    "summary": "Winning entry in the NASA Space Apps Challenge Zaragoza 2019. Interactive 3D Web visualization tool developed with Python, JavaScript, React and three.js",
+    "href": "https://uparrowstudio.com/risingwater/"
+  }
+]

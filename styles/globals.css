@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  @apply duration-200;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-serif;
+}
+
+.prose a {
+  @apply text-glongas-green-dark hover:text-black;
+}
+
+.prose img {
+  @apply mx-auto border-4 border-white;
+}
+
+.prose strong {
+  @apply font-medium;
+}
+
+.prose h2 {
+  @apply pl-3 border-l-4 border-glongas-green;
+}
+
+.prose code,
+.prose pre {
+  @apply bg-white text-gray-700;
+}
+
+.prose code {
+  @apply p-0.5 rounded;
+}
+
+img + em {
+  @apply block -mt-5 text-center text-sm;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  @apply text-gray-500;
+}
+
+.token.punctuation {
+  @apply text-gray-700;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  @apply text-glongas-green;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  @apply text-glongas-green-dark;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  @apply text-yellow-600;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  @apply text-blue-600;
+}
+
+.token.function,
+.token.class-name {
+  @apply text-purple-600;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  @apply text-yellow-600;
+}
+
+.remark-code-title {
+  @apply text-gray-700 px-5 py-3 rounded-t bg-gray-200 text-sm font-mono font-bold;
+}
+
+.remark-code-title + pre {
+  @apply mt-0 rounded-t-none;
+}
+
+.mdx-marker {
+  @apply block -mx-4 px-4 bg-gray-50 border-l-4 border-glongas-green;
+}

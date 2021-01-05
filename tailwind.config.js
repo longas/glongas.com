@@ -1,11 +1,23 @@
 module.exports = {
-  purge: ["./pages/**/*.tsx", "./components/**/*.tsx"],
-  darkMode: false, // or 'media' or 'class'
+  purge: ["./pages/**/*.tsx", "./layouts/**/*.tsx", "./components/**/*.tsx"],
+  darkMode: false,
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        serif: ["Zilla Slab", "serif"],
+      },
+      colors: {
+        "glongas-green": "#5EBE92",
+        "glongas-green-dark": "#137649",
+      },
+      width: {
+        container: "750px",
+      },
+    },
   },
   variants: {
-    extend: {},
+    extend: { scale: ["group-hover"] },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
