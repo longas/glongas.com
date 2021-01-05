@@ -19,10 +19,6 @@ h6 {
   @apply text-glongas-green-dark hover:text-black;
 }
 
-.prose img {
-  @apply mx-auto border-4 border-white;
-}
-
 .prose strong {
   @apply font-medium;
 }

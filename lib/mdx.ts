@@ -4,6 +4,7 @@ import renderToString from "next-mdx-remote/render-to-string";
 import { MdxRemote } from "next-mdx-remote/types";
 import path from "path";
 import readingTime from "reading-time";
+import BlogFigure from "../components/BlogFigure";
 
 interface IPostFrontMatterBase {
   title: string;
@@ -34,6 +35,7 @@ export async function getPostBySlug(slug: string): Promise<IPost> {
   const { data, content } = matter(source);
 
   const mdxSource = await renderToString(content, {
+    components: { BlogFigure },
     mdxOptions: {
       remarkPlugins: [require("remark-code-titles")],
       rehypePlugins: [require("mdx-prism")],

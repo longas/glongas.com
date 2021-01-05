@@ -1,6 +1,7 @@
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import hydrate from "next-mdx-remote/hydrate";
 import { NextSeo } from "next-seo";
+import BlogFigure from "../../components/BlogFigure";
 import Layout from "../../layouts/Layout";
 import { getPostBySlug, getPosts, IPost } from "../../lib/mdx";
 
@@ -8,7 +9,7 @@ export default function BlogPost({
   mdxSource,
   frontMatter,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const content = hydrate(mdxSource);
+  const content = hydrate(mdxSource, { components: { BlogFigure } });
 
   return (
     <Layout>
